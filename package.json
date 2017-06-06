@@ -1,0 +1,54 @@
+{
+  "name": "html-style-guide",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp",
+    "test": "gulp lint",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobiedermann/html-style-guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcobiedermann/html-style-guide/issues"
+  },
+  "keywords": [
+    "html",
+    "style",
+    "coding",
+    "guide",
+    "styleguide",
+    "best practices",
+    "tips"
+  ],
+  "author": "Marco Biedermann",
+  "homepage": "https://www.marcobiedermann",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.4.0",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jsonminify": "^1.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify": "^3.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "stylelint": "^7.10.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "highlight.js": "^9.12.0"
+  }
+}
