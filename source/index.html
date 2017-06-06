@@ -444,6 +444,122 @@
 
         </section>
 
+        <section id="tag" class="section js-section">
+
+          <h2>Tag</h2>
+
+          <h3>Newline</h3>
+          <p>Newline between tag name and content must be avoided.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;p&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim magnam quas maxime harum, sint nesciunt nihil, molestiae, quos soluta inventore rem nemo sit quidem dolorum, sunt magni eos officia illum!
+&lt;/p&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim magnam quas maxime harum, sint nesciunt nihil, molestiae, quos soluta inventore rem nemo sit quidem dolorum, sunt magni eos officia illum!&lt;/p&gt;</code></pre>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Tag Case</h3>
+          <p>Tags must be written in lowercase.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;HTML&gt;&lt;/HTML&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;html&gt;&lt;/html&gt;</code></pre>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Empty</h3>
+          <p>Tags must not be empty.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;a href="#"&gt;&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;a href="#"&gt;Home&lt;/a&gt;</code></pre>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Self-closing</h3>
+          <p>Trailing slash in self-closing tag must be ommitted.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;img src="path/to/image" /&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;img src="path/to/image"&gt;</code></pre>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Closing tags</h3>
+          <p>Optional closing tags like <code>&lt;/body&gt;</code>, <code>&lt;/li&gt;</code>, <code>&lt;/p&gt;</code>, <code>&lt;/td&gt;</code> or <code>&lt;/th&gt;</code> must not be ommitted.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;html&gt;
+  &lt;body&gt;
+    &lt;ul&gt;
+      &lt;li&gt;List Item 1
+      &lt;li&gt;List Item 2
+      &lt;li&gt;List Item 3
+    &lt;/ul&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;html&gt;
+  &lt;body&gt;
+    &lt;ul&gt;
+      &lt;li&gt;List Item 1&lt;/li&gt;
+      &lt;li&gt;List Item 2&lt;/li&gt;
+      &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
@@ -459,6 +575,7 @@
             <li><a href="#link" class="js-scroll-to">Link</a></li>
             <li><a href="#selector" class="js-scroll-to">Selector</a></li>
             <li><a href="#string" class="js-scroll-to">String</a></li>
+            <li><a href="#tag" class="js-scroll-to">Tag</a></li>
           </ul>
         </nav>
 
