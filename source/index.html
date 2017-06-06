@@ -638,6 +638,85 @@
 
         </section>
 
+        <section id="javascript" class="section js-section">
+
+          <h2>JavaScript</h2>
+
+          <h3>External files</h3>
+          <p>External JavaScript files must be loaded before closing <code>&lt;/body&gt;</code> tag.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="path/to/file.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;html&gt;
+  &lt;head&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;script src="path/to/file.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Event Handlers</h3>
+          <p>Inline event handlers must be avoided.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;button onclick="foo()"&gt;Button&lt;/button&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;button class="js-button"&gt;Button&lt;/button&gt;
+
+&lt;script&gt;
+  document.querySelector('.js-button').addEventListener('click', foo);
+&lt;/script&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Type</h3>
+          <p>Script <code>type="text/javascript"</code> attribute must be ommitted</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;script type="text/javascript"&gt;&lt;/script&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;script&gt;&lt;/script&gt;</code></pre>
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
@@ -656,6 +735,7 @@
             <li><a href="#tag" class="js-scroll-to">Tag</a></li>
             <li><a href="#general" class="js-scroll-to">General</a></li>
             <li><a href="#css" class="js-scroll-to">CSS</a></li>
+            <li><a href="#javascript" class="js-scroll-to">JavaScript</a></li>
           </ul>
         </nav>
 
