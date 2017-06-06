@@ -3,6 +3,15 @@ import css         from 'highlight.js/lib/languages/css';
 import javascript  from 'highlight.js/lib/languages/javascript';
 import xml         from 'highlight.js/lib/languages/xml';
 
+window.ga = window.ga || function() {
+  (ga.q = ga.q || []).push(arguments)
+};
+
+ga.l = +new Date;
+
+ga('create', 'UA-46884111-5', 'auto');
+ga('send', 'pageview');
+
 hljs.registerLanguage('css', css);
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('xml', xml);
