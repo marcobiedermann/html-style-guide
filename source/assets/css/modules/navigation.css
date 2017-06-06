@@ -1,0 +1,25 @@
+.navigation {
+  position: sticky;
+  top: 4.5em;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.navigation a:focus,
+.navigation a:hover {
+  color: var(--primaryColor);
+}
+
+.navigation .is-active {
+  font-weight: 700;
+}

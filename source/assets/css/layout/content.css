@@ -1,0 +1,13 @@
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+@media (--media-md) {
+
+  .content {
+    display: flex;
+  }
+
+}

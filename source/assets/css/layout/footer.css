@@ -1,0 +1,13 @@
+:root {
+  --footerPaddingVertical: 1em;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding-bottom: var(--footerPaddingVertical);
+  padding-top: var(--footerPaddingVertical);
+}
+
+.footer p {
+  margin: 0;
+}

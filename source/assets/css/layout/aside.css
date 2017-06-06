@@ -1,0 +1,27 @@
+:root {
+  --asideMarginVertical: 4.5em;
+}
+
+.aside {
+  margin-bottom: var(--asideMarginVertical);
+  margin-top: var(--asideMarginVertical);
+}
+
+@media (--media-md) {
+
+  .aside {
+    flex-shrink: 0;
+    width: 16.5%;
+  }
+
+}
+
+@media (--media-md) {
+
+  .aside--left {
+    border-right: 1px solid #ddd;
+    margin-right: 3%;
+    order: -1;
+  }
+
+}

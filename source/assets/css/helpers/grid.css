@@ -1,0 +1,35 @@
+:root {
+  --gridGutter: 1.5em;
+  --gridWidth: 95%;
+}
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--gridWidth);
+}
+
+.grid__row {
+  margin: calc(var(--gridGutter) / -2);
+}
+
+@media (--media-lg) {
+
+  .grid__row {
+    display: flex;
+  }
+
+}
+
+.grid__col {
+  flex-grow: 1;
+  margin: calc(var(--gridGutter) / 2);
+}
+
+@media (--media-lg) {
+
+  .grid__col--6 {
+    width: calc(100% / 2 - var(--gridGutter));
+  }
+
+}

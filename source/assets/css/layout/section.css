@@ -1,0 +1,12 @@
+:root {
+  --sectionPaddingVertical: 4.5em;
+}
+
+.section {
+  padding-bottom: var(--sectionPaddingVertical);
+  padding-top: var(--sectionPaddingVertical);
+}
+
+.section + .section {
+  border-top: 1px solid #ddd;
+}

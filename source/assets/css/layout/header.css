@@ -1,0 +1,18 @@
+:root {
+  --headerBackgroundColor: var(--primaryColor);
+  --headerColor: #fff;
+  --headerPaddingVertical: 3em;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--headerBackgroundColor);
+  color: var(--headerColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+  padding-bottom: var(--headerPaddingVertical);
+  padding-top: var(--headerPaddingVertical);
+  text-align: center;
+}

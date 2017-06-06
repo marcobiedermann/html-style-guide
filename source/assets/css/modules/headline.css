@@ -1,0 +1,41 @@
+:root {
+  --h1FontSize: 3.5rem;
+  --h1MarginBottom: 0.5em;
+  --h1MarginTop: 0;
+
+  --h2FontSize: 2.25rem;
+  --h2MarginBottom: 0.5em;
+  --h2MarginTop: 0;
+
+  --h3FontSize: 1.5rem;
+  --h3MarginBottom: 0.5em;
+  --h3MarginTop: 1em;
+
+  --h4FontSize: 1.125rem;
+  --h4MarginBottom: 0.5em;
+  --h4MarginTop: 1em;
+}
+
+h1 {
+  font-size: var(--h1FontSize);
+  margin-bottom: var(--h1MarginBottom);
+  margin-top: var(--h1MarginTop);
+}
+
+h2 {
+  font-size: var(--h2FontSize);
+  margin-bottom: var(--h2MarginBottom);
+  margin-top: var(--h2MarginTop);
+}
+
+h3 {
+  font-size: var(--h3FontSize);
+  margin-bottom: var(--h3MarginBottom);
+  margin-top: var(--h3MarginTop);
+}
+
+h4 {
+  font-size: var(--h4FontSize);
+  margin-bottom: var(--h4MarginBottom);
+  margin-top: var(--h4MarginTop);
+}
