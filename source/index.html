@@ -40,9 +40,61 @@
 
         </section>
 
+        <section id="anchor" class="section js-section">
+
+          <h2>Anchor</h2>
+
+          <h3>External links</h3>
+          <p>External links must have <code>rel="noopener"</code> and <code>target="_blank"</code> attribute.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;a href="path/to/external/file"&gt;External URL&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;a href="path/to/external/file" rel="noopener" target="_blank"&gt;External URL&lt;/a&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Title attribute</h3>
+          <p>Anchor must have <code>title</code> attribute.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;a href="#"&gt;Link&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;a href="#" title="Description of anchor"&gt;Link&lt;/a&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
+
+        <nav class="navigation">
+          <ul>
+            <li><a href="#anchor" class="is-active js-scroll-to">Anchor</a></li>
+          </ul>
+        </nav>
 
       </aside>
 
