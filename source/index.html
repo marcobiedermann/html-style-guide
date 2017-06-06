@@ -587,6 +587,57 @@
 
         </section>
 
+        <section id="css" class="section js-section">
+
+          <h2>CSS</h2>
+
+          <h3>Inline Styles</h3>
+          <p>Inline styles must be avoided.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;button style="background-color: #2980b9; color: #fff; display: inline-block; padding: 0.25em 1em;"&gt;Button&lt;/button&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;style&gt;
+  button {
+    background-color: #2980b9;
+    color: #fff;
+    display: inline-block;
+    padding: 0.25em 1em;
+  }
+&lt;/style&gt;
+
+&lt;button class="button"&gt;Button&lt;/button&gt;</code></pre>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Type</h3>
+          <p>Style <code>type="text/css"</code> attribute must be ommitted</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;style type="text/css"&gt;&lt;/style&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+              <h4>Good</h4>
+              <pre><code class="html">&lt;style&gt;&lt;/style&gt;</code></pre>
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
@@ -604,6 +655,7 @@
             <li><a href="#string" class="js-scroll-to">String</a></li>
             <li><a href="#tag" class="js-scroll-to">Tag</a></li>
             <li><a href="#general" class="js-scroll-to">General</a></li>
+            <li><a href="#css" class="js-scroll-to">CSS</a></li>
           </ul>
         </nav>
 
