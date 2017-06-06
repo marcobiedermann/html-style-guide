@@ -242,6 +242,66 @@
 
         </section>
 
+        <section id="document" class="section js-section">
+
+          <h2>Document</h2>
+
+          <h3>Encoding</h3>
+          <p>Document must have <code>utf-8</code> encoding.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;head&gt;
+  &lt;title&gt;Website&lt;/title&gt;
+  &lt;meta charset="Shift_JIS"&gt;
+&lt;/head&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Website&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Character encoding</h3>
+          <p>Character encoding must be within the first 1024 bytes of the document.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;head&gt;
+  &lt;title&gt;Website&lt;/title&gt;
+  …
+  &lt;meta charset="utf-8"&gt;
+&lt;/head&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  …
+  &lt;title&gt;Website&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
@@ -251,6 +311,7 @@
             <li><a href="#anchor" class="is-active js-scroll-to">Anchor</a></li>
             <li><a href="#attribute" class="js-scroll-to">Attribute</a></li>
             <li><a href="#comment" class="js-scroll-to">Comment</a></li>
+            <li><a href="#document" class="js-scroll-to">Document</a></li>
           </ul>
         </nav>
 
