@@ -86,6 +86,115 @@
 
         </section>
 
+        <section id="attribute" class="section js-section">
+
+          <h2>Attribute</h2>
+
+          <h3>Attribute Case</h3>
+          <p>Attribute must be written in lowercase.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;a HREF="#"&gt;&lt;/a&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;a href="#"&gt;&lt;/a&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Attribute Content</h3>
+          <p>Attribute content must be written in lowercase.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;meta charset="UTF-8"&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;meta charset="utf-8"&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Boolean attribute</h3>
+          <p>Boolean attribute values like <code>checked</code>, <code>disabled</code> and <code>required</code>  are redundant and must be ommitted.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;input type="text" required="required"&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;input type="text" required&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Attribute value</h3>
+          <p>Attribute value must be wrapped in quotation marks.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;input type=text&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;input type="text"&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Equal Sign</h3>
+          <p>Spaces around attribute equal signs must be avoided.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;input type = "text"&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;input type="text"&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
@@ -93,6 +202,7 @@
         <nav class="navigation">
           <ul>
             <li><a href="#anchor" class="is-active js-scroll-to">Anchor</a></li>
+            <li><a href="#attribute" class="js-scroll-to">Attribute</a></li>
           </ul>
         </nav>
 
