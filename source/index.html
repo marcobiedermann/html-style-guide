@@ -195,6 +195,53 @@
 
         </section>
 
+        <section id="comment" class="section js-section">
+
+          <h2>Comment</h2>
+
+          <h3>Comment marker</h3>
+          <p>Single line comments must have space before and after comment markers.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;!--single line comment--&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;!-- single line comment --&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+          <hr>
+
+          <h3>Single line comment</h3>
+          <p>Single line comment must be placed before tag.</p>
+
+          <div class="grid__row">
+
+            <div class="grid__col grid__col--6">
+              <h4>Bad</h4>
+              <pre><code class="html">&lt;body&gt; &lt;!-- Single line comment --&gt;</code></pre>
+            </div>
+
+            <div class="grid__col grid__col--6">
+
+              <h4>Good</h4>
+              <pre><code class="html">&lt;!-- Single line comment --&gt;
+&lt;body&gt;</code></pre>
+
+            </div>
+
+          </div>
+
+        </section>
+
       </main>
 
       <aside class="aside aside--left">
@@ -203,6 +250,7 @@
           <ul>
             <li><a href="#anchor" class="is-active js-scroll-to">Anchor</a></li>
             <li><a href="#attribute" class="js-scroll-to">Attribute</a></li>
+            <li><a href="#comment" class="js-scroll-to">Comment</a></li>
           </ul>
         </nav>
 
