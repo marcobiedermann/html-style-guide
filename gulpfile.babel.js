@@ -37,6 +37,11 @@ gulp.task('css', () => {
     .pipe(gulp.dest(`${dirs.dest}/assets/css`));
 });
 
+gulp.task('copy', () => {
+  return gulp.src(`${dirs.source}/**/*.txt`)
+    .pipe(gulp.dest(`${dirs.dest}`));
+});
+
 gulp.task('deploy', () => {
   return gulp.src(`${dirs.dest}/**/*`)
     .pipe(gulpGhPages());
@@ -126,6 +131,7 @@ gulp.task('watch', () => {
   gulp.watch(`${dirs.source}/**/*.json`, ['json']);
   gulp.watch(`${dirs.source}/**/*.{gif,ico,jpg,jpeg,png}`, ['images']);
   gulp.watch(`${dirs.source}/**/*.svg`, ['svg']);
+  gulp.watch(`${dirs.source}/**/*.txt`, ['copy']);
 });
 
 gulp.task('default', [
@@ -136,6 +142,7 @@ gulp.task('default', [
   'json',
   'images',
   'svg',
+  'copy',
   'watch'
 ]);
 
@@ -150,5 +157,6 @@ gulp.task('build', [
   'js',
   'json',
   'images',
-  'svg'
+  'svg',
+  'copy'
 ]);
