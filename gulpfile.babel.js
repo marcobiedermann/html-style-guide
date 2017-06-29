@@ -2,7 +2,6 @@ import babelify          from 'babelify';
 import browserify        from 'browserify';
 import gulp              from 'gulp';
 import gulpCleanCss      from 'gulp-clean-css';
-import gulpGhPages       from 'gulp-gh-pages';
 import gulpHtmlmin       from 'gulp-htmlmin';
 import gulpImagemin      from 'gulp-imagemin';
 import gulpJsonminify    from 'gulp-jsonminify';
@@ -18,7 +17,7 @@ import vinylSourceStream from 'vinyl-source-stream';
 
 const dirs = {
   source: './source',
-  dest  : './dist'
+  dest  : './docs'
 };
 
 gulp.task('css', () => {
@@ -40,11 +39,6 @@ gulp.task('css', () => {
 gulp.task('copy', () => {
   return gulp.src(`${dirs.source}/**/*.txt`)
     .pipe(gulp.dest(`${dirs.dest}`));
-});
-
-gulp.task('deploy', () => {
-  return gulp.src(`${dirs.dest}/**/*`)
-    .pipe(gulpGhPages());
 });
 
 gulp.task('html', () => {

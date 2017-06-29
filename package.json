@@ -5,8 +5,7 @@
   "scripts": {
     "start": "gulp",
     "test": "gulp lint",
-    "build": "gulp build",
-    "deploy": "gulp deploy"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -34,7 +33,6 @@
     "browserify": "^14.4.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.2",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.3.0",
     "gulp-jsonminify": "^1.0.0",
