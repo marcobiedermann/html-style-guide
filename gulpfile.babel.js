@@ -86,14 +86,17 @@ gulp.task('images', () => {
 
 gulp.task('js', () => {
   const b = browserify({
+    debug: true,
     entries: `${dirs.source}/assets/js/script.js`,
-    transform: [babelify]
+    transform: [
+      babelify
+    ]
   });
 
   return b.bundle()
     .pipe(vinylSourceStream('script.js'))
     .pipe(vinylBuffer())
-    .pipe(gulpSourcemaps.init())
+    .pipe(gulpSourcemaps.init({ loadMaps: true }))
     .pipe(gulpUglify())
     .pipe(gulpSourcemaps.write('.'))
     .pipe(gulp.dest(`${dirs.dest}/assets/js`));
