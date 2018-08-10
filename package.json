@@ -29,22 +29,22 @@
   "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.24.1",
-    "babelify": "^7.3.0",
-    "browserify": "^14.4.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.7.0",
-    "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-jsonminify": "^1.0.0",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^8.0.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-svgmin": "^1.2.4",
     "gulp-uglify": "^3.0.0",
     "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0",
-    "stylelint": "^8.0.0",
+    "postcss-import": "^12.0.0",
+    "stylelint": "^9.4.0",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
     "highlight.js": "^9.12.0"
