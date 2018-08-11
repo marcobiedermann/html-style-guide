@@ -5,9 +5,7 @@
 }
 
 @media (--media-md) {
-
   .content {
     display: flex;
   }
-
 }

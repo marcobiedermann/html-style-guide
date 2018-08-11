@@ -14,11 +14,9 @@
 }
 
 @media (--media-lg) {
-
   .grid__row {
     display: flex;
   }
-
 }
 
 .grid__col {
@@ -27,9 +25,7 @@
 }
 
 @media (--media-lg) {
-
   .grid__col--6 {
     width: calc(100% / 2 - var(--gridGutter));
   }
-
 }

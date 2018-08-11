@@ -1,7 +1,5 @@
 @import '../../../node_modules/highlight.js/styles/github.css';
-
 @import 'helpers/grid.css';
-
 @import 'layout/aside.css';
 @import 'layout/base.css';
 @import 'layout/content.css';
@@ -9,7 +7,6 @@
 @import 'layout/header.css';
 @import 'layout/main.css';
 @import 'layout/section.css';
-
 @import 'modules/anchor.css';
 @import 'modules/code.css';
 @import 'modules/github.css';
@@ -19,5 +16,4 @@
 @import 'modules/list.css';
 @import 'modules/navigation.css';
 @import 'modules/paragraph.css';
-
 @import 'themes/default.css';
