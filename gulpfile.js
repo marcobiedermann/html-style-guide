@@ -119,7 +119,9 @@ gulp.task('watch', () => {
   gulp.watch(`${dirs.source}/**/*.txt`, ['copy']);
 });
 
-gulp.task('default', [
+gulp.task('lint', gulp.parallel('lint:css'));
+
+gulp.task('default', gulp.parallel(
   'lint',
   'css',
   'html',
@@ -129,13 +131,9 @@ gulp.task('default', [
   'svg',
   'copy',
   'watch',
-]);
+));
 
-gulp.task('lint', [
-  'lint:css',
-]);
-
-gulp.task('build', [
+gulp.task('build', gulp.parallel(
   'lint',
   'css',
   'html',
@@ -144,4 +142,4 @@ gulp.task('build', [
   'images',
   'svg',
   'copy',
-]);
+));
