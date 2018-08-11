@@ -17,7 +17,7 @@ import vinylSourceStream from 'vinyl-source-stream';
 
 const dirs = {
   source: './source',
-  dest  : './docs'
+  dest  : './dist'
 };
 
 gulp.task('css', () => {
