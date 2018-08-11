@@ -6,4 +6,4 @@
 
 A style guide which helps you write better, performant, structured, scalable and maintainable HTML.
 
-[https://marcobiedermann.github.io/html-style-guide/](https://marcobiedermann.github.io/html-style-guide/)
+[https://html-style-guide.netlify.com/](https://html-style-guide.netlify.com/)
