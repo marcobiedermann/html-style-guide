@@ -5,6 +5,8 @@
   "scripts": {
     "build": "gulp build",
     "format": "prettier --write '**/*.{css,html,js,json,md,yml,yaml}'",
+    "lint:js": "eslint '**/*.js'",
+    "lint": "npm run lint:js",
     "start": "gulp",
     "test": "gulp lint"
   },
@@ -32,6 +34,11 @@
     "@babel/preset-env": "^7.5.0",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-htmlmin": "^5.0.1",
