@@ -5,10 +5,11 @@
   "scripts": {
     "build": "gulp build",
     "format": "prettier --write '**/*.{css,html,js,json,md,yml,yaml}'",
-    "lint:js": "eslint '**/*.js'",
-    "lint": "npm run lint:js",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:js": "eslint '**/*.{js,jsx}'",
+    "lint": "npm run lint:css && npm run lint:js",
     "start": "gulp",
-    "test": "gulp lint"
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",

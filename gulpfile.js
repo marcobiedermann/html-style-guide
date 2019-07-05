@@ -11,7 +11,6 @@ const gulpSvgmin = require('gulp-svgmin');
 const gulpUglify = require('gulp-uglify');
 const postcssCssnext = require('postcss-cssnext');
 const postcssImport = require('postcss-import');
-const stylelint = require('stylelint');
 const vinylBuffer = require('vinyl-buffer');
 const vinylSourceStream = require('vinyl-source-stream');
 
@@ -116,8 +115,6 @@ gulp.task('json', () =>
     .pipe(gulp.dest(`${dirs.dest}`)),
 );
 
-gulp.task('lint:css', () => gulp.src(`${dirs.source}/assets/css/**/*.css`).pipe(gulpPostcss([stylelint()])));
-
 gulp.task('svg', () =>
   gulp
     .src(`${dirs.source}/**/*.svg`)
@@ -134,8 +131,6 @@ gulp.task('watch', () => {
   gulp.watch(`${dirs.source}/**/*.svg`, ['svg']);
   gulp.watch(`${dirs.source}/**/*.txt`, ['copy']);
 });
-
-gulp.task('lint', gulp.parallel('lint:css'));
 
 gulp.task('default', gulp.parallel('lint', 'css', 'html', 'js', 'json', 'images', 'svg', 'copy', 'watch'));
 
