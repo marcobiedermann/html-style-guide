@@ -3,9 +3,11 @@ import css from 'highlight.js/lib/languages/css';
 import javascript from 'highlight.js/lib/languages/javascript';
 import xml from 'highlight.js/lib/languages/xml';
 
-window.ga = window.ga || function () {
-  (ga.q = ga.q || []).push(arguments);
-};
+window.ga =
+  window.ga ||
+  function() {
+    (ga.q = ga.q || []).push(arguments);
+  };
 
 ga.l = +new Date();
 
@@ -41,10 +43,10 @@ function scrollTo(Y, duration, easingFunction, callback) {
 
   function scroll(timestamp) {
     const currentTime = performance.now();
-    const time = min(1, ((currentTime - start) / duration));
+    const time = min(1, (currentTime - start) / duration);
     const easedT = easingFunction(time);
 
-    element.scrollTop = (easedT * (Y - from)) + from;
+    element.scrollTop = easedT * (Y - from) + from;
 
     if (time < 1) {
       requestAnimationFrame(scroll);
@@ -56,7 +58,7 @@ function scrollTo(Y, duration, easingFunction, callback) {
   requestAnimationFrame(scroll);
 }
 
-$$sections.forEach((section) => {
+$$sections.forEach(section => {
   sections[section.id] = section.offsetTop;
 });
 
@@ -71,7 +73,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-document.querySelectorAll('.js-scroll-to').forEach((element) => {
+document.querySelectorAll('.js-scroll-to').forEach(element => {
   element.addEventListener('click', () => {
     scrollTo(document.getElementById(element.href.split('#')[1]).offsetTop, 600, easing.easeInOutCubic);
   });
