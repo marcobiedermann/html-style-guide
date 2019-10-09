@@ -35,7 +35,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.3",
-    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
     "babelify": "^10.0.0",
     "browserify": "^16.5.0",
     "eslint": "^6.5.1",
