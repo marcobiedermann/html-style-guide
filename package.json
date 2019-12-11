@@ -65,6 +65,6 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "highlight.js": "^9.16.2"
+    "highlight.js": "^9.17.0"
   }
 }
