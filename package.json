@@ -58,7 +58,7 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "stylelint": "^13.0.0",
-    "stylelint-config-prettier": "^8.0.0",
+    "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-order": "^4.0.0",
     "vinyl-buffer": "^1.0.1",
