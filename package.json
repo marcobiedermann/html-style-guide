@@ -60,7 +60,7 @@
     "stylelint": "^13.3.2",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.0.0",
+    "stylelint-order": "^4.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
