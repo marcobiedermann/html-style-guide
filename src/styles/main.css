@@ -1,0 +1,113 @@
+:root {
+  --baseColor: #222;
+  --baseFontFamily: 'Roboto', sans-serif;
+  --baseFontSize: 1.125rem;
+  --baseLineHeight: 1.75;
+  --primaryColor: #e34f26;
+
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: var(--baseFontFamily);
+  --bodyFontSize: var(--baseFontSize);
+  --bodyLineHeight: var(--baseLineHeight);
+
+  --h1FontSize: 3.5rem;
+  --h1MarginBottom: 0.5em;
+  --h1MarginTop: 0;
+  --h2FontSize: 2.25rem;
+  --h2MarginBottom: 0.5em;
+  --h2MarginTop: 0;
+  --h3FontSize: 1.5rem;
+  --h3MarginBottom: 0.5em;
+  --h3MarginTop: 1em;
+  --h4FontSize: 1.125rem;
+  --h4MarginBottom: 0.5em;
+  --h4MarginTop: 1em;
+
+  --listMarginBottom: 1.5em;
+  --listMarginTop: 0.5em;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  color: var(--bodyColor);
+  font-family: var(--bodyFontFamily);
+  font-size: var(--bodyFontSize);
+  line-height: var(--bodyLineHeight);
+  margin: 0;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: var(--h1FontSize);
+  margin-bottom: var(--h1MarginBottom);
+  margin-top: var(--h1MarginTop);
+}
+
+h2 {
+  font-size: var(--h2FontSize);
+  margin-bottom: var(--h2MarginBottom);
+  margin-top: var(--h2MarginTop);
+}
+
+h3 {
+  font-size: var(--h3FontSize);
+  margin-bottom: var(--h3MarginBottom);
+  margin-top: var(--h3MarginTop);
+}
+
+h4 {
+  font-size: var(--h4FontSize);
+  margin-bottom: var(--h4MarginBottom);
+  margin-top: var(--h4MarginTop);
+}
+
+hr {
+  background-color: #ddd;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+p {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  max-width: 48em;
+}
+
+pre {
+  margin-bottom: 1.5em;
+  margin-top: 0.5em;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+ul {
+  margin-bottom: var(--listMarginBottom);
+  margin-top: var(--listMarginTop);
+  padding-left: 1.5em;
+}

@@ -1,0 +1,10 @@
+:root {
+  --gridGutter: 1.5em;
+  --gridWidth: 95%;
+}
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--gridWidth);
+}

@@ -1,2 +1,4 @@
-dist
-node_module
+.cache
+node_modules
+public
+.DS_Store
