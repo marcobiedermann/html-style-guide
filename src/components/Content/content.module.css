@@ -4,7 +4,7 @@
   width: 95%;
 }
 
-@media (--media-md) {
+@media (min-width: 48em) {
   .content {
     display: flex;
   }

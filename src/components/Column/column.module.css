@@ -1,0 +1,10 @@
+.column {
+  flex-grow: 1;
+  margin: calc(var(--gridGutter) / 2);
+}
+
+@media (min-width: 60em) {
+  .column {
+    width: calc(100% / 2 - var(--gridGutter));
+  }
+}

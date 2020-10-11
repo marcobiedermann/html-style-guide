@@ -7,15 +7,15 @@
   margin-top: var(--asideMarginVertical);
 }
 
-@media (--media-md) {
+@media (min-width: 48em) {
   .aside {
     flex-shrink: 0;
     width: 16.5%;
   }
 }
 
-@media (--media-md) {
-  .aside--left {
+@media (min-width: 48em) {
+  .aside {
     border-right: 1px solid #ddd;
     margin-right: 3%;
     order: -1;
