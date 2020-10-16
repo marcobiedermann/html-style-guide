@@ -120,23 +120,23 @@ const IndexPage: FC<PageProps> = () => {
                         <div dangerouslySetInnerHTML={{ __html: html }} />
 
                         <Row>
-                          {good && (
-                            <Column>
-                              <h4>Good</h4>
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: good.childMarkdownRemark.html,
-                                }}
-                              />
-                            </Column>
-                          )}
-
                           {bad && (
                             <Column>
                               <h4>Bad</h4>
                               <div
                                 dangerouslySetInnerHTML={{
                                   __html: bad.childMarkdownRemark.html,
+                                }}
+                              />
+                            </Column>
+                          )}
+
+                          {good && (
+                            <Column>
+                              <h4>Good</h4>
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: good.childMarkdownRemark.html,
                                 }}
                               />
                             </Column>
