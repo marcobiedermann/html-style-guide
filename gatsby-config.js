@@ -6,6 +6,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'HTML Style Guide',
+        short_name: 'HTMLStyleGuide',
+        start_url: '/',
+        background_color: '#e34f26',
+        theme_color: '#e34f26',
+        display: 'minimal-ui',
+        icon: 'src/images/favicon.png',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-react-helmet',
     },
     {
