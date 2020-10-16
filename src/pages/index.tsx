@@ -98,8 +98,8 @@ const IndexPage: FC<PageProps> = () => {
             <p>A style guide which helps you write better, performant, structured, scalable and maintainable HTML.</p>
           </Section>
 
-          {group.map((group) => {
-            const { edges, fieldValue } = group;
+          {group.map((section) => {
+            const { edges, fieldValue } = section;
 
             return (
               <Section key={fieldValue} id={fieldValue}>
@@ -145,7 +145,11 @@ const IndexPage: FC<PageProps> = () => {
                       </div>
                     );
                   })
-                  .reduce((accumulator, currentValue, index) => [accumulator, <hr key={index} />, currentValue])}
+                  .reduce((accumulator, currentValue) => [
+                    accumulator,
+                    <hr key={currentValue.toString()} />,
+                    currentValue,
+                  ])}
               </Section>
             );
           })}
@@ -155,7 +159,7 @@ const IndexPage: FC<PageProps> = () => {
 
             <ul>
               <li>
-                <a href="https://validator.w3.org/" target="_blank" rel="noopener">
+                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
                   w3 Validator
                 </a>
               </li>
@@ -167,22 +171,26 @@ const IndexPage: FC<PageProps> = () => {
 
             <ul>
               <li>
-                <a href="http://codeguide.co/" target="_blank" rel="noopener">
+                <a href="http://codeguide.co/" target="_blank" rel="noopener noreferrer">
                   CodeGuide
                 </a>
               </li>
               <li>
-                <a href="https://google.github.io/styleguide/htmlcssguide.html" target="_blank" rel="noopener">
+                <a
+                  href="https://google.github.io/styleguide/htmlcssguide.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Google HTML & CSS Guide
                 </a>
               </li>
               <li>
-                <a href="https://www.w3schools.com/html/html5_syntax.asp" target="_blank" rel="noopener">
+                <a href="https://www.w3schools.com/html/html5_syntax.asp" target="_blank" rel="noopener noreferrer">
                   w3school
                 </a>
               </li>
               <li>
-                <a href="https://github.com/hail2u/html-best-practices" target="_blank" rel="noopener">
+                <a href="https://github.com/hail2u/html-best-practices" target="_blank" rel="noopener noreferrer">
                   HTML Best Practices
                 </a>
               </li>
@@ -203,7 +211,7 @@ const IndexPage: FC<PageProps> = () => {
       <Footer>
         <Grid>
           <p>
-            <a href="https://github.com/marcobiedermann/html-style-guide" target="_blank" rel="noopener">
+            <a href="https://github.com/marcobiedermann/html-style-guide" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </p>

@@ -10,7 +10,7 @@ export interface NavigationProps {
   routes: Route[];
 }
 
-const Navigation: FC<NavigationProps> = (props) => {
+const Navigation: FC<NavigationProps> = (props: NavigationProps) => {
   const { routes } = props;
 
   return (
