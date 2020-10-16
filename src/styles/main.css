@@ -4,12 +4,10 @@
   --baseFontSize: 1.125rem;
   --baseLineHeight: 1.75;
   --primaryColor: #e34f26;
-
   --bodyColor: var(--baseColor);
   --bodyFontFamily: var(--baseFontFamily);
   --bodyFontSize: var(--baseFontSize);
   --bodyLineHeight: var(--baseLineHeight);
-
   --h1FontSize: 3.5rem;
   --h1MarginBottom: 0.5em;
   --h1MarginTop: 0;
@@ -22,7 +20,6 @@
   --h4FontSize: 1.125rem;
   --h4MarginBottom: 0.5em;
   --h4MarginTop: 1em;
-
   --listMarginBottom: 1.5em;
   --listMarginTop: 0.5em;
 }
