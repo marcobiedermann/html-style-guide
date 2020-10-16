@@ -13,10 +13,46 @@ import Navigation from '../components/Navigation';
 import Row from '../components/Row';
 import Section from '../components/Section';
 
+type Distinct = string;
+
+interface Edge {
+  node: {
+    id: string;
+    html: string;
+    frontmatter: {
+      title: string;
+      bad?: {
+        id: string;
+        childMarkdownRemark: {
+          html: string;
+        };
+      };
+      good?: {
+        id: string;
+        childMarkdownRemark: {
+          html: string;
+        };
+      };
+    };
+  };
+}
+
+interface Group {
+  edges: Edge[];
+  fieldValue: string;
+}
+
+interface IndexPageQuery {
+  allMarkdownRemark: {
+    distinct: Distinct[];
+    group: Group[];
+  };
+}
+
 const IndexPage: FC<PageProps> = () => {
   const {
     allMarkdownRemark: { distinct, group },
-  } = useStaticQuery(graphql`
+  } = useStaticQuery<IndexPageQuery>(graphql`
     query Markdown {
       allMarkdownRemark {
         distinct(field: frontmatter___categories)
