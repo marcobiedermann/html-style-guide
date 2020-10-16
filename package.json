@@ -45,12 +45,14 @@
     "gatsby-remark-prismjs": "^3.5.15",
     "gatsby-source-filesystem": "^2.3.32",
     "gatsby-transformer-remark": "^2.8.37",
+    "lodash": "^4.17.20",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.162",
     "eslint": "^7.10.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.12.0",
