@@ -5,8 +5,6 @@ interface SectionProps {
   id?: string;
 }
 
-const Section: FC<SectionProps> = (props) => {
-  return <section className={stlyes.section} {...props} />;
-};
+const Section: FC<SectionProps> = (props) => <section className={stlyes.section} {...props} />;
 
 export default Section;
