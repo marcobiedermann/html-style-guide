@@ -1,8 +1,11 @@
-module.exports = {
+const config = {
   siteMetadata: {
     title: 'HTML Style Guide',
     description: 'A style guide which helps you write better, performant, structured, scalable and maintainable HTML.',
     author: '@BiedermannMarco',
+    github: {
+      url: 'https://github.com/marcobiedermann/html-style-guide',
+    },
   },
   plugins: [
     {
@@ -45,3 +48,5 @@ module.exports = {
     },
   ],
 };
+
+module.exports = config;

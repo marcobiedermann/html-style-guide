@@ -19,21 +19,24 @@ import { useIndexPage } from '../hooks';
 const IndexPage: FC<PageProps> = () => {
   const {
     allMarkdownRemark: { distinct, group },
+    site: {
+      siteMetadata: { description, github, title },
+    },
   } = useIndexPage();
 
   return (
     <>
       <Header>
-        <GitHub />
-        <h1>HTML Style Guide</h1>
+        <GitHub {...github} />
+        <h1>{title}</h1>
         <img src="/images/html5.svg" alt="HTML5 Logo" width="160" height="183" />
       </Header>
 
       <Content>
         <Main>
           <Section>
-            <h2>HTML Style Guide</h2>
-            <p>A style guide which helps you write better, performant, structured, scalable and maintainable HTML.</p>
+            <h2>{title}</h2>
+            <p>{description}</p>
           </Section>
 
           {group.map((section) => {
@@ -142,7 +145,7 @@ const IndexPage: FC<PageProps> = () => {
       <Footer>
         <Grid>
           <p>
-            <a href="https://github.com/marcobiedermann/html-style-guide" target="_blank" rel="noopener noreferrer">
+            <a href={github.url} target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </p>

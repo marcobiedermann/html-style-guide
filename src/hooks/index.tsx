@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 type Distinct = string;
 
@@ -36,11 +36,20 @@ interface IndexPageQuery {
     distinct: Distinct[];
     group: Group[];
   };
+  site: {
+    siteMetadata: {
+      description: string;
+      github: {
+        url: string;
+      };
+      title: string;
+    };
+  };
 }
 
 export function useIndexPage(): IndexPageQuery {
   return useStaticQuery<IndexPageQuery>(graphql`
-    query Markdown {
+    query {
       allMarkdownRemark {
         distinct(field: frontmatter___categories)
         group(field: frontmatter___categories) {
@@ -65,6 +74,15 @@ export function useIndexPage(): IndexPageQuery {
             }
           }
           fieldValue
+        }
+      }
+      site {
+        siteMetadata {
+          description
+          github {
+            url
+          }
+          title
         }
       }
     }
