@@ -12,6 +12,8 @@ import Main from '../components/Main';
 import Navigation from '../components/Navigation';
 import Row from '../components/Row';
 import Section from '../components/Section';
+import resources from '../constants/resources';
+import tools from '../constants/tools';
 import { useIndexPage } from '../hooks';
 
 const IndexPage: FC<PageProps> = () => {
@@ -94,11 +96,17 @@ const IndexPage: FC<PageProps> = () => {
             <h2>Tools</h2>
 
             <ul>
-              <li>
-                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
-                  w3 Validator
-                </a>
-              </li>
+              {tools.map((tool) => {
+                const { name, url } = tool;
+
+                return (
+                  <li key={url}>
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {name}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </Section>
 
@@ -106,30 +114,17 @@ const IndexPage: FC<PageProps> = () => {
             <h2>Resources</h2>
 
             <ul>
-              <li>
-                <a href="http://codeguide.co/" target="_blank" rel="noopener noreferrer">
-                  CodeGuide
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://google.github.io/styleguide/htmlcssguide.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Google HTML & CSS Guide
-                </a>
-              </li>
-              <li>
-                <a href="https://www.w3schools.com/html/html5_syntax.asp" target="_blank" rel="noopener noreferrer">
-                  w3school
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/hail2u/html-best-practices" target="_blank" rel="noopener noreferrer">
-                  HTML Best Practices
-                </a>
-              </li>
+              {resources.map((resource) => {
+                const { name, url } = resource;
+
+                return (
+                  <li key={url}>
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                      {name}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </Section>
         </Main>
