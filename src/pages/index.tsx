@@ -1,5 +1,5 @@
 import { PageProps } from 'gatsby';
-import _ from 'lodash';
+import startCase from 'lodash/startCase';
 import React, { FC } from 'react';
 import Aside from '../components/Aside';
 import Column from '../components/Column';
@@ -39,7 +39,7 @@ const IndexPage: FC<PageProps> = () => {
 
             return (
               <Section key={fieldValue} id={fieldValue}>
-                <h2>{_.startCase(fieldValue)}</h2>
+                <h2>{startCase(fieldValue)}</h2>
                 {edges
                   .map((edge) => {
                     const {
@@ -137,7 +137,7 @@ const IndexPage: FC<PageProps> = () => {
         <Aside>
           <Navigation
             routes={[...distinct, 'tools', 'resources'].map((route) => ({
-              name: _.startCase(route),
+              name: startCase(route),
               path: `#${route}`,
             }))}
           />
