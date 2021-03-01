@@ -2,7 +2,7 @@ import { PageProps } from 'gatsby';
 import startCase from 'lodash/startCase';
 import React, { FC } from 'react';
 import Aside from '../components/Aside';
-import Column from '../components/Column';
+import Categories from '../components/Categories';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
 import GitHub from '../components/GitHub';
@@ -10,7 +10,6 @@ import Grid from '../components/Grid';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Navigation from '../components/Navigation';
-import Row from '../components/Row';
 import Section from '../components/Section';
 import resources from '../constants/resources';
 import tools from '../constants/tools';
@@ -39,61 +38,7 @@ const IndexPage: FC<PageProps> = () => {
             <p>{description}</p>
           </Section>
 
-          {group.map((section) => {
-            const { edges, fieldValue } = section;
-
-            return (
-              <Section key={fieldValue} id={fieldValue}>
-                <h2>{startCase(fieldValue)}</h2>
-                {edges
-                  .map((edge) => {
-                    const {
-                      node: {
-                        id,
-                        html,
-                        frontmatter: { title, bad, good },
-                      },
-                    } = edge;
-
-                    return (
-                      <div key={id}>
-                        <h3>{title}</h3>
-                        <div dangerouslySetInnerHTML={{ __html: html }} />
-
-                        <Row>
-                          {bad && (
-                            <Column>
-                              <h4>Bad</h4>
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: bad.childMarkdownRemark.html,
-                                }}
-                              />
-                            </Column>
-                          )}
-
-                          {good && (
-                            <Column>
-                              <h4>Good</h4>
-                              <div
-                                dangerouslySetInnerHTML={{
-                                  __html: good.childMarkdownRemark.html,
-                                }}
-                              />
-                            </Column>
-                          )}
-                        </Row>
-                      </div>
-                    );
-                  })
-                  .reduce((accumulator, currentValue) => [
-                    accumulator,
-                    <hr key={currentValue.toString()} />,
-                    currentValue,
-                  ])}
-              </Section>
-            );
-          })}
+          <Categories categories={group} />
 
           <Section id="tools">
             <h2>Tools</h2>
