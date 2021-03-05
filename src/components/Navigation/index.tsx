@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './navigation.module.css';
+import * as styles from './navigation.module.css';
 
 interface Route {
   name: string;

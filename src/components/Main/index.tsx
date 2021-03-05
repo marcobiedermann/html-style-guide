@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import stlyes from './main.module.css';
+import * as styles from './main.module.css';
 
-const Main: FC = (props) => <main className={stlyes.main} {...props} />;
+const Main: FC = (props) => <main className={styles.main} {...props} />;
 
 export default Main;

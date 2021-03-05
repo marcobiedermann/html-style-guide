@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import stlyes from './section.module.css';
+import * as styles from './section.module.css';
 
 interface SectionProps {
   id?: string;
 }
 
-const Section: FC<SectionProps> = (props) => <section className={stlyes.section} {...props} />;
+const Section: FC<SectionProps> = (props) => <section className={styles.section} {...props} />;
 
 export default Section;

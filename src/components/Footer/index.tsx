@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import stlyes from './footer.module.css';
+import * as styles from './footer.module.css';
 
-const Footer: FC = (props) => <footer className={stlyes.footer} {...props} />;
+const Footer: FC = (props) => <footer className={styles.footer} {...props} />;
 
 export default Footer;

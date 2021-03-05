@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import stlyes from './aside.module.css';
+import * as styles from './aside.module.css';
 
-const Aside: FC = (props) => <aside className={stlyes.aside} {...props} />;
+const Aside: FC = (props) => <aside className={styles.aside} {...props} />;
 
 export default Aside;

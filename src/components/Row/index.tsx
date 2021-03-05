@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import stlyes from './row.module.css';
+import * as styles from './row.module.css';
 
-const Row: FC = (props) => <div className={stlyes.row} {...props} />;
+const Row: FC = (props) => <div className={styles.row} {...props} />;
 
 export default Row;

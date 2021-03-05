@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import stlyes from './header.module.css';
+import * as styles from './header.module.css';
 
-const Header: FC = (props) => <header className={stlyes.header} {...props} />;
+const Header: FC = (props) => <header className={styles.header} {...props} />;
 
 export default Header;
