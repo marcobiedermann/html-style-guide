@@ -45,7 +45,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-prismjs": "^4.0.0",
     "gatsby-source-filesystem": "^3.4.0",
-    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-remark": "^4.1.0",
     "lodash": "^4.17.21",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
