@@ -14,6 +14,8 @@
     "lint:css": "stylelint '**/*.css'",
     "lint:js": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint": "npm run lint:css && npm run lint:js",
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick --staged",
     "serve": "gatsby serve",
     "test": "npm run lint"
   },
