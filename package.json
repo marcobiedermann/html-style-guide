@@ -37,7 +37,7 @@
   "homepage": "https://www.marcobiedermann",
   "license": "ISC",
   "dependencies": {
-    "gatsby": "^3.8.1",
+    "gatsby": "^3.10.2",
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-offline": "^4.8.0",
     "gatsby-plugin-react-helmet": "^4.8.0",
