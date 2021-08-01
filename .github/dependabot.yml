@@ -1,29 +1,6 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: monthly
-    time: "04:00"
-    timezone: Europe/Berlin
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: gatsby
-    versions:
-    - 2.32.8
-    - 2.32.9
-  - dependency-name: gatsby-remark-autolink-headers
-    versions:
-    - 2.11.0
-  - dependency-name: eslint-config-prettier
-    versions:
-    - 8.1.0
-  - dependency-name: "@typescript-eslint/parser"
-    versions:
-    - 4.15.2
-  - dependency-name: husky
-    versions:
-    - 5.1.2
-  - dependency-name: eslint
-    versions:
-    - 7.19.0
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'monthly'

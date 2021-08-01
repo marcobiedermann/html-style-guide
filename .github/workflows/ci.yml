@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⏬ Checkout
+        uses: actions/checkout@v2
+
+      - name: 🔢 Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+
+      - name: ⚙️ Use Node.js (.nvmrc)
+        uses: actions/setup-node@v2
+        with:
+          cache: 'npm'
+          node-version: '${{ steps.nvm.outputs.NVMRC }}'
+
+      - name: 🔋 Install
+        run: npm ci
+
+      - name: 🤖 Linting
+        run: npm run lint
+
+      - name: 🛠️ Building
+        run: npm run build
+
+      - name: 📊 Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
