@@ -1,5 +1,4 @@
 .cache
 node_modules
 public
-.DS_Store
 src/data
