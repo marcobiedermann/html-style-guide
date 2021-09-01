@@ -55,7 +55,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.171",
+    "@types/lodash": "^4.14.172",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.30.0",
     "eslint": "^7.32.0",
