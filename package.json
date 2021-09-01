@@ -45,7 +45,7 @@
     "gatsby-plugin-react-helmet": "^4.10.0",
     "gatsby-remark-autolink-headers": "^4.7.0",
     "gatsby-remark-external-links": "0.0.4",
-    "gatsby-remark-prismjs": "^5.7.0",
+    "gatsby-remark-prismjs": "^5.10.0",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-transformer-remark": "^4.7.0",
     "lodash": "^4.17.21",
