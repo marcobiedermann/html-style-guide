@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Category, { CategoryProps } from '../Category';
 import Section from '../Section';
 
@@ -6,7 +6,7 @@ export interface CategoriesProps {
   categories: CategoryProps[];
 }
 
-const Categories: FC<CategoriesProps> = (props) => {
+function Categories(props: CategoriesProps): JSX.Element {
   const { categories } = props;
 
   return (
@@ -22,6 +22,6 @@ const Categories: FC<CategoriesProps> = (props) => {
       })}
     </>
   );
-};
+}
 
 export default Categories;

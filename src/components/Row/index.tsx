@@ -1,6 +1,12 @@
-import React, { FC } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './row.module.css';
 
-const Row: FC = (props) => <div className={styles.row} {...props} />;
+export interface RowProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
+}
+
+function Row(props: RowProps): JSX.Element {
+  return <div className={styles.row} {...props} />;
+}
 
 export default Row;

@@ -1,10 +1,12 @@
-import React, { FC } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './section.module.css';
 
-interface SectionProps {
-  id?: string;
+interface SectionProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
 }
 
-const Section: FC<SectionProps> = (props) => <section className={styles.section} {...props} />;
+function Section(props: SectionProps): JSX.Element {
+  return <section className={styles.section} {...props} />;
+}
 
 export default Section;

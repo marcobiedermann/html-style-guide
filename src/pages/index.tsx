@@ -1,6 +1,5 @@
-import { PageProps } from 'gatsby';
 import startCase from 'lodash/startCase';
-import React, { FC } from 'react';
+import React from 'react';
 import Aside from '../components/Aside';
 import Categories from '../components/Categories';
 import Content from '../components/Content';
@@ -15,7 +14,7 @@ import resources from '../constants/resources';
 import tools from '../constants/tools';
 import { useIndexPage } from '../hooks';
 
-const IndexPage: FC<PageProps> = () => {
+function IndexPage(): JSX.Element {
   const {
     allMarkdownRemark: { distinct, group },
     site: {
@@ -98,6 +97,6 @@ const IndexPage: FC<PageProps> = () => {
       </Footer>
     </>
   );
-};
+}
 
 export default IndexPage;

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { HTMLAttributes } from 'react';
 import * as styles from './navigation.module.css';
 
 interface Route {
@@ -6,11 +6,11 @@ interface Route {
   path: string;
 }
 
-export interface NavigationProps {
+export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   routes: Route[];
 }
 
-const Navigation: FC<NavigationProps> = (props: NavigationProps) => {
+function Navigation(props: NavigationProps): JSX.Element {
   const { routes } = props;
 
   return (
@@ -30,6 +30,6 @@ const Navigation: FC<NavigationProps> = (props: NavigationProps) => {
       </ul>
     </nav>
   );
-};
+}
 
 export default Navigation;

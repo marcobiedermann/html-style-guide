@@ -1,5 +1,5 @@
 import { startCase } from 'lodash';
-import React, { FC } from 'react';
+import React from 'react';
 import Column from '../Column';
 import Row from '../Row';
 
@@ -30,7 +30,7 @@ export interface CategoryProps {
   fieldValue: string;
 }
 
-const Category: FC<CategoryProps> = (props) => {
+function Category(props: CategoryProps): JSX.Element {
   const { edges, fieldValue } = props;
 
   return (

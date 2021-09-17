@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
+import React from 'react';
 import * as styles from './github.module.css';
 
 export interface GitHubProps {
   url: string;
 }
 
-const GitHub: FC<GitHubProps> = (props) => {
+function GitHub(props: GitHubProps): JSX.Element {
   const { url } = props;
 
   return (
@@ -20,6 +20,6 @@ const GitHub: FC<GitHubProps> = (props) => {
       </svg>
     </a>
   );
-};
+}
 
 export default GitHub;

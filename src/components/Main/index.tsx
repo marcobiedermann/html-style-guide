@@ -1,6 +1,12 @@
-import React, { FC } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import * as styles from './main.module.css';
 
-const Main: FC = (props) => <main className={styles.main} {...props} />;
+export interface MainProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode;
+}
+
+function Main(props: MainProps): JSX.Element {
+  return <main className={styles.main} {...props} />;
+}
 
 export default Main;
