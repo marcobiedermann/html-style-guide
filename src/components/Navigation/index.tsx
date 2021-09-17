@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import * as styles from './navigation.module.css';
+import { navigation } from './navigation.module.css';
 
 interface Route {
   name: string;
@@ -14,7 +14,7 @@ function Navigation(props: NavigationProps): JSX.Element {
   const { routes } = props;
 
   return (
-    <nav className={styles.navigation}>
+    <nav className={navigation}>
       <ul>
         {routes.map((route) => {
           const { name, path } = route;
