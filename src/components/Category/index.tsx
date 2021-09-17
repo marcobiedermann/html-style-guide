@@ -80,6 +80,6 @@ function Category(props: CategoryProps): JSX.Element {
         .reduce((accumulator, currentValue) => [accumulator, <hr key={currentValue.toString()} />, currentValue])}
     </>
   );
-};
+}
 
 export default Category;
