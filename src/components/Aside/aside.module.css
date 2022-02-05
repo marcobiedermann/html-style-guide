@@ -1,10 +1,10 @@
 :root {
-  --asideMarginVertical: 4.5em;
+  --aside-margin-vertical: 4.5em;
 }
 
 .aside {
-  margin-bottom: var(--asideMarginVertical);
-  margin-top: var(--asideMarginVertical);
+  margin-bottom: var(--aside-margin-vertical);
+  margin-top: var(--aside-margin-vertical);
 }
 
 @media (min-width: 48em) {

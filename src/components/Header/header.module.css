@@ -1,18 +1,18 @@
 :root {
-  --headerBackgroundColor: var(--primaryColor);
-  --headerColor: #fff;
-  --headerPaddingVertical: 3em;
+  --header-background-color: var(--primary-color);
+  --header-color: #fff;
+  --header-padding-vertical: 3em;
 }
 
 .header {
   align-items: center;
-  background-color: var(--headerBackgroundColor);
-  color: var(--headerColor);
+  background-color: var(--header-background-color);
+  color: var(--header-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 75vh;
-  padding-bottom: var(--headerPaddingVertical);
-  padding-top: var(--headerPaddingVertical);
+  padding-bottom: var(--header-padding-vertical);
+  padding-top: var(--header-padding-vertical);
   text-align: center;
 }

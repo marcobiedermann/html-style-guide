@@ -1,7 +1,16 @@
 {
   "extends": ["stylelint-config-prettier", "stylelint-config-standard"],
-  "plugins": ["stylelint-order"],
+  "plugins": ["stylelint-selector-bem-pattern", "stylelint-order"],
   "rules": {
-    "order/properties-alphabetical-order": true
+    "selector-class-pattern": null,
+    "order/properties-alphabetical-order": true,
+    "plugin/selector-bem-pattern": {
+      "componentName": "[A-Z]+",
+      "componentSelectors": {
+        "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+        "combined": "^\\.combined-{componentName}-[a-z]+$"
+      },
+      "utilitySelectors": "^\\.util-[a-z]+$"
+    }
   }
 }
