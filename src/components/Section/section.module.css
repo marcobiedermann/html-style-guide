@@ -1,10 +1,10 @@
 :root {
-  --sectionPaddingVertical: 4.5em;
+  --section-padding-vertical: 4.5em;
 }
 
 .section {
-  padding-bottom: var(--sectionPaddingVertical);
-  padding-top: var(--sectionPaddingVertical);
+  padding-bottom: var(--section-padding-vertical);
+  padding-top: var(--section-padding-vertical);
 }
 
 .section + .section {
