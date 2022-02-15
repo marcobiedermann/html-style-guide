@@ -1,5 +1,5 @@
 .row {
-  margin: calc(var(--gridGutter) / -2);
+  gap: var(--grid-gutter);
 }
 
 @media (min-width: 60em) {
