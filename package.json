@@ -47,7 +47,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-prismjs": "^6.6.0",
     "gatsby-source-filesystem": "^4.6.0",
-    "gatsby-transformer-remark": "^5.6.0",
+    "gatsby-transformer-remark": "^5.9.0",
     "lodash": "^4.17.21",
     "prismjs": "^1.27.0",
     "react": "^17.0.2",
@@ -55,7 +55,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.178",
+    "@types/lodash": "^4.14.179",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "eslint": "^8.8.0",
