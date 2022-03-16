@@ -17,7 +17,7 @@
 
 .navigation a:focus,
 .navigation a:hover {
-  color: var(--primaryColor);
+  color: var(--primary-color);
 }
 
 .navigation .is-active {
