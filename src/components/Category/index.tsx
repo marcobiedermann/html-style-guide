@@ -1,5 +1,7 @@
+/* eslint-disable react/no-danger */
+
 import { startCase } from 'lodash';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Column from '../Column';
 import Row from '../Row';
 
@@ -37,7 +39,7 @@ function Category(props: CategoryProps): JSX.Element {
     <>
       <h2>{startCase(fieldValue)}</h2>
       {edges
-        .map((edge) => {
+        .map<ReactNode>((edge) => {
           const {
             node: {
               id,
@@ -77,7 +79,7 @@ function Category(props: CategoryProps): JSX.Element {
             </div>
           );
         })
-        .reduce((accumulator, currentValue) => [accumulator, <hr key={currentValue.toString()} />, currentValue])}
+        .reduce((accumulator, currentValue) => [accumulator, <hr key={currentValue?.toString()} />, currentValue])}
     </>
   );
 }

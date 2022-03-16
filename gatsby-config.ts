@@ -1,4 +1,7 @@
-const config = {
+import type { GatsbyConfig } from 'gatsby';
+import { resolve } from 'path';
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: 'HTML Style Guide',
     description: 'A style guide which helps you write better, performant, structured, scalable and maintainable HTML.',
@@ -27,7 +30,7 @@ const config = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
-        path: `${__dirname}/src/data`,
+        path: resolve('src/data'),
       },
     },
     {
@@ -49,4 +52,4 @@ const config = {
   ],
 };
 
-module.exports = config;
+export default config;
