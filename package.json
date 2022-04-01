@@ -46,7 +46,7 @@
     "gatsby-remark-autolink-headers": "^5.11.1",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-remark-prismjs": "^6.11.0",
-    "gatsby-source-filesystem": "^4.10.0",
+    "gatsby-source-filesystem": "^4.11.1",
     "gatsby-transformer-remark": "^5.10.0",
     "lodash": "^4.17.21",
     "prismjs": "^1.27.0",
