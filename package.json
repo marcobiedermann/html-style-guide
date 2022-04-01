@@ -41,7 +41,7 @@
   "dependencies": {
     "gatsby": "^4.10.0",
     "gatsby-plugin-manifest": "^4.11.1",
-    "gatsby-plugin-offline": "^5.10.0",
+    "gatsby-plugin-offline": "^5.11.1",
     "gatsby-plugin-react-helmet": "^5.11.0",
     "gatsby-remark-autolink-headers": "^5.10.0",
     "gatsby-remark-external-links": "0.0.4",
