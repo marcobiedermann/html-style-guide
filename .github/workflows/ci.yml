@@ -14,15 +14,11 @@ jobs:
       - name: ⏬ Checkout
         uses: actions/checkout@v2
 
-      - name: 🔢 Read .nvmrc
-        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
-        id: nvm
-
-      - name: ⚙️ Use Node.js (.nvmrc)
-        uses: actions/setup-node@v2
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v3
         with:
           cache: 'npm'
-          node-version: '${{ steps.nvm.outputs.NVMRC }}'
+          node-version-file: '.nvmrc'
 
       - name: 🔋 Install
         run: npm ci
