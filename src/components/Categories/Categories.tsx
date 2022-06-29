@@ -2,7 +2,7 @@ import React from 'react';
 import Category, { CategoryProps } from '../Category';
 import Section from '../Section';
 
-export interface CategoriesProps {
+interface CategoriesProps {
   categories: CategoryProps[];
 }
 
@@ -24,4 +24,5 @@ function Categories(props: CategoriesProps): JSX.Element {
   );
 }
 
+export type { CategoriesProps };
 export default Categories;

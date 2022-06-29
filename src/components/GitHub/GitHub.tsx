@@ -3,7 +3,7 @@
 import React from 'react';
 import { github, github__arm } from './github.module.css';
 
-export interface GitHubProps {
+interface GitHubProps {
   url: string;
 }
 
@@ -24,4 +24,5 @@ function GitHub(props: GitHubProps): JSX.Element {
   );
 }
 
+export type { GitHubProps };
 export default GitHub;
