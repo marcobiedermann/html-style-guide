@@ -24,9 +24,6 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: 'gatsby-plugin-react-helmet',
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'data',
@@ -39,9 +36,6 @@ const config: GatsbyConfig = {
         plugins: [
           {
             resolve: 'gatsby-remark-autolink-headers',
-          },
-          {
-            resolve: 'gatsby-remark-external-links',
           },
           {
             resolve: 'gatsby-remark-prismjs',

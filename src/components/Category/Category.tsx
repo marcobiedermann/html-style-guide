@@ -27,7 +27,7 @@ interface Edge {
   };
 }
 
-export interface CategoryProps {
+interface CategoryProps {
   edges: Edge[];
   fieldValue: string;
 }
@@ -84,4 +84,5 @@ function Category(props: CategoryProps): JSX.Element {
   );
 }
 
+export type { CategoryProps };
 export default Category;

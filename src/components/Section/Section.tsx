@@ -9,4 +9,5 @@ function Section(props: SectionProps): JSX.Element {
   return <section className={section} {...props} />;
 }
 
+export type { SectionProps };
 export default Section;

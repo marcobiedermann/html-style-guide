@@ -6,7 +6,7 @@ interface Route {
   path: string;
 }
 
-export interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
+interface NavigationProps extends HTMLAttributes<HTMLDivElement> {
   routes: Route[];
 }
 
@@ -32,4 +32,5 @@ function Navigation(props: NavigationProps): JSX.Element {
   );
 }
 
+export type { NavigationProps };
 export default Navigation;
