@@ -1,9 +1,13 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+/* eslint-disable import/prefer-default-export */
 
-// You can delete this file if you're not using it
-import './src/styles/main.css';
+import { WrapPageElementBrowserArgs } from 'gatsby';
 import 'prismjs/themes/prism.css';
+import React from 'react';
+import Layout from './src/components/Layout';
+import './src/styles/main.css';
+
+function wrapPageElement({ element, props }: WrapPageElementBrowserArgs): JSX.Element {
+  return <Layout {...props}>{element}</Layout>;
+}
+
+export { wrapPageElement };
