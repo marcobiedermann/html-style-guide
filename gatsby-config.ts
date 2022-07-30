@@ -1,5 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 
 const config: GatsbyConfig = {
   siteMetadata: {

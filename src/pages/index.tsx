@@ -1,6 +1,5 @@
 import React from 'react';
 import Categories from '../components/Categories';
-import Layout from '../components/Layout';
 import Section from '../components/Section';
 import resources from '../constants/resources';
 import tools from '../constants/tools';
@@ -15,7 +14,7 @@ function IndexPage(): JSX.Element {
   } = useIndexPage();
 
   return (
-    <Layout>
+    <>
       <Section>
         <h2>{title}</h2>
         <p>{description}</p>
@@ -58,7 +57,7 @@ function IndexPage(): JSX.Element {
           })}
         </ul>
       </Section>
-    </Layout>
+    </>
   );
 }
 

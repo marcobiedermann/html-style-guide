@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+/* eslint-disable import/prefer-default-export */
 
-// You can delete this file if you're not using it
+import { WrapPageElementBrowserArgs } from 'gatsby';
+import React from 'react';
+import Layout from './src/components/Layout';
+
+function wrapPageElement({ element, props }: WrapPageElementBrowserArgs): JSX.Element {
+  return <Layout {...props}>{element}</Layout>;
+}
+
+export { wrapPageElement };
