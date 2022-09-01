@@ -42,7 +42,7 @@
     "gatsby": "^4.19.2",
     "gatsby-plugin-manifest": "^4.19.0",
     "gatsby-remark-autolink-headers": "^5.19.0",
-    "gatsby-remark-prismjs": "^6.19.0",
+    "gatsby-remark-prismjs": "^6.22.0",
     "gatsby-source-filesystem": "^4.19.0",
     "gatsby-transformer-remark": "^5.19.0",
     "lodash": "^4.17.21",
