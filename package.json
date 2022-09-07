@@ -1,7 +1,7 @@
 {
   "name": "html-style-guide",
   "version": "1.0.0",
-  "description": "",
+  "description": "HTML Style Guide",
   "scripts": {
     "build": "gatsby build",
     "check": "tsc --noEmit",
@@ -17,7 +17,8 @@
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
     "serve": "gatsby serve",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "update": "npx npm-check-updates --format group --interactive"
   },
   "repository": {
     "type": "git",
@@ -40,11 +41,11 @@
   "license": "ISC",
   "dependencies": {
     "gatsby": "^4.22.0",
-    "gatsby-plugin-manifest": "^4.19.0",
-    "gatsby-remark-autolink-headers": "^5.19.0",
+    "gatsby-plugin-manifest": "^4.22.0",
+    "gatsby-remark-autolink-headers": "^5.22.0",
     "gatsby-remark-prismjs": "^6.22.0",
-    "gatsby-source-filesystem": "^4.19.0",
-    "gatsby-transformer-remark": "^5.19.0",
+    "gatsby-source-filesystem": "^4.22.0",
+    "gatsby-transformer-remark": "^5.22.0",
     "lodash": "^4.17.21",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
@@ -53,22 +54,22 @@
   "devDependencies": {
     "@types/lodash": "^4.14.184",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
-    "@typescript-eslint/parser": "^5.32.0",
-    "eslint": "^8.21.0",
+    "@typescript-eslint/parser": "^5.36.2",
+    "eslint": "^8.23.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
-    "stylelint": "^14.9.1",
+    "stylelint": "^14.11.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^26.0.0",
     "stylelint-order": "^5.0.0",
     "stylelint-selector-bem-pattern": "^2.1.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   }
 }
