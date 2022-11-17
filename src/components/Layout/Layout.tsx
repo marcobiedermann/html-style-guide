@@ -1,6 +1,6 @@
 import { startCase } from 'lodash';
 import React, { ReactNode } from 'react';
-import { useIndexPage } from '../../hooks';
+import useIndexPage from '../../hooks';
 import Aside from '../Aside';
 import Content from '../Content';
 import Footer from '../Footer';

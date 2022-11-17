@@ -1,9 +1,10 @@
 import React from 'react';
 import Categories from '../components/Categories';
 import Section from '../components/Section';
+import SEO from '../components/SEO';
 import resources from '../constants/resources';
 import tools from '../constants/tools';
-import { useIndexPage } from '../hooks';
+import useIndexPage from '../hooks';
 
 function IndexPage(): JSX.Element {
   const {
@@ -59,6 +60,10 @@ function IndexPage(): JSX.Element {
       </Section>
     </>
   );
+}
+
+export function Head() {
+  return <SEO />;
 }
 
 export default IndexPage;
