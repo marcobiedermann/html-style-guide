@@ -51,8 +51,8 @@ export function useIndexPage(): IndexPageQuery {
   return useStaticQuery<IndexPageQuery>(graphql`
     query {
       allMarkdownRemark {
-        distinct(field: frontmatter___categories)
-        group(field: frontmatter___categories) {
+        distinct(field: { frontmatter: { categories: SELECT } })
+        group(field: { frontmatter: { categories: SELECT } }) {
           edges {
             node {
               id
