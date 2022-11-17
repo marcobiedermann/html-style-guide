@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 import { graphql, useStaticQuery } from 'gatsby';
 
 type Distinct = string;
@@ -47,7 +45,7 @@ interface IndexPageQuery {
   };
 }
 
-export function useIndexPage(): IndexPageQuery {
+function useIndexPage(): IndexPageQuery {
   return useStaticQuery<IndexPageQuery>(graphql`
     query {
       allMarkdownRemark {
@@ -88,3 +86,5 @@ export function useIndexPage(): IndexPageQuery {
     }
   `);
 }
+
+export default useIndexPage;
