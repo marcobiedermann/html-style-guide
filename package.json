@@ -42,7 +42,7 @@
   "dependencies": {
     "gatsby": "^5.0.1",
     "gatsby-plugin-manifest": "^5.0.0",
-    "gatsby-remark-autolink-headers": "^6.0.0",
+    "gatsby-remark-autolink-headers": "^6.2.0",
     "gatsby-remark-prismjs": "^7.0.0",
     "gatsby-source-filesystem": "^5.0.0",
     "gatsby-transformer-remark": "^6.0.0",
