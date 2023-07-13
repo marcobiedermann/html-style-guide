@@ -2,12 +2,12 @@
   --base-color: #222;
   --base-font-family: "Roboto", sans-serif;
   --base-font-size: 1.125rem;
-  --base-hine-height: 1.75;
+  --base-line-height: 1.75;
   --primary-color: #e34f26;
   --body-color: var(--base-color);
   --body-font-family: var(--base-font-family);
   --body-font-size: var(--base-font-size);
-  --body-hine-height: var(--base-hine-height);
+  --body-line-height: var(--base-line-height);
   --h1-font-size: 3.5rem;
   --h1-margin-bottom: 0.5em;
   --h1-margin-top: 0;
@@ -42,7 +42,7 @@ body {
   color: var(--body-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
-  line-height: var(--body-hine-height);
+  line-height: var(--body-line-height);
   margin: 0;
   min-height: 100%;
 }
