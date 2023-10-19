@@ -4,3 +4,18 @@ updates:
     directory: '/'
     schedule:
       interval: 'monthly'
+    groups:
+      eslint:
+        patterns:
+          - '@typescript-eslint/*'
+          - 'eslint*'
+      gatsby:
+        patterns:
+          - 'gatsby*'
+      react:
+        patterns:
+          - 'react*'
+          - '@types/react*'
+      stylelint:
+        patterns:
+          - 'stylelint*'
