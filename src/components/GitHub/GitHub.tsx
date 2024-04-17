@@ -11,7 +11,7 @@ function GitHub(props: GitHubProps): JSX.Element {
   const { url } = props;
 
   return (
-    <a href={url} className={github} target="_blank" rel="noopener noreferrer">
+    <a href={url} className={github} target="_blank" rel="noopener noreferrer" aria-label="Project on GitHub">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" fill="#e34f26">
         <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#fff" />
         <path
