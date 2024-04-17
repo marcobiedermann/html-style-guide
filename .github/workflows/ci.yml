@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: ⏬ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: ⚙️ Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           cache: 'npm'
           node-version-file: '.nvmrc'
@@ -28,8 +28,3 @@ jobs:
 
       - name: 🛠️ Building
         run: npm run build
-
-      - name: 📊 Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
