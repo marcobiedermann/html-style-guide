@@ -2,7 +2,7 @@
   flex-grow: 1;
 }
 
-@media (min-width: 60em) {
+@media (width >= 60em) {
   .column {
     width: 50%;
   }
