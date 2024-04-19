@@ -7,14 +7,14 @@
   margin-top: var(--aside-margin-vertical);
 }
 
-@media (min-width: 48em) {
+@media (width >= 48em) {
   .aside {
     flex-shrink: 0;
     width: 16.5%;
   }
 }
 
-@media (min-width: 48em) {
+@media (width >= 48em) {
   .aside {
     border-right: 1px solid #ddd;
     margin-right: 3%;

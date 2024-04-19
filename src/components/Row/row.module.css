@@ -2,7 +2,7 @@
   gap: var(--grid-gutter);
 }
 
-@media (min-width: 60em) {
+@media (width >= 60em) {
   .row {
     display: flex;
   }

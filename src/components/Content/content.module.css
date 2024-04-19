@@ -4,7 +4,7 @@
   width: 95%;
 }
 
-@media (min-width: 48em) {
+@media (width >= 48em) {
   .content {
     display: flex;
   }
