@@ -1,8 +1,0 @@
-deleteBranchAfterMerge: true
-
-mergeMethod: rebase
-
-reportStatus: true
-
-requiredLabels:
-  - dependencies
