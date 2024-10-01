@@ -67,7 +67,7 @@
     "stylelint": "^16.9.0",
     "stylelint-config-standard": "^36.0.1",
     "stylelint-order": "^6.0.4",
-    "stylelint-selector-bem-pattern": "^4.0.0",
+    "stylelint-selector-bem-pattern": "^4.0.1",
     "typescript": "^5.5.2"
   },
   "lint-staged": {
