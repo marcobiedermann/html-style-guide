@@ -5,6 +5,10 @@ updates:
     schedule:
       interval: 'monthly'
     groups:
+      minor-and-patch:
+        update-types:
+          - 'patch'
+          - 'minor'
       eslint:
         patterns:
           - '@typescript-eslint/*'
@@ -12,10 +16,16 @@ updates:
       gatsby:
         patterns:
           - 'gatsby*'
+      lodash:
+        patterns:
+          - '@types/lodash-es'
+          - 'lodash-es'
       react:
         patterns:
-          - 'react*'
-          - '@types/react*'
+          - '@types/react-dom'
+          - '@types/react'
+          - 'react-dom'
+          - 'react'
       stylelint:
         patterns:
           - 'stylelint*'
