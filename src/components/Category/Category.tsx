@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 
-import { startCase } from 'lodash';
+import { startCase } from 'lodash-es';
 import React, { ReactNode } from 'react';
 import Column from '../Column';
 import Row from '../Row';
