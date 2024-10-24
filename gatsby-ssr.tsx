@@ -2,10 +2,10 @@
 
 import { WrapPageElementBrowserArgs } from 'gatsby';
 import React from 'react';
-import Layout from './src/components/Layout';
+import { Default } from './src/layouts';
 
 function wrapPageElement({ element, props }: WrapPageElementBrowserArgs): JSX.Element {
-  return <Layout {...props}>{element}</Layout>;
+  return <Default {...props}>{element}</Default>;
 }
 
 export { wrapPageElement };

@@ -1,7 +1,5 @@
 import React from 'react';
-import Categories from '../components/Categories';
-import Section from '../components/Section';
-import SEO from '../components/SEO';
+import { Categories, Section, SEO } from '../components';
 import resources from '../constants/resources';
 import tools from '../constants/tools';
 import useIndexPage from '../hooks';
