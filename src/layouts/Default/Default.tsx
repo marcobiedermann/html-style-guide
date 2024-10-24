@@ -1,20 +1,13 @@
 import { startCase } from 'lodash-es';
 import React, { ReactNode } from 'react';
+import { Aside, Content, Footer, GitHub, Grid, Header, Main, Navigation } from '../../components';
 import useIndexPage from '../../hooks';
-import Aside from '../Aside';
-import Content from '../Content';
-import Footer from '../Footer';
-import GitHub from '../GitHub';
-import Grid from '../Grid';
-import Header from '../Header';
-import Main from '../Main';
-import Navigation from '../Navigation';
 
-interface LayoutProps {
+interface DefaultProps {
   children: ReactNode;
 }
 
-function Layout(props: LayoutProps) {
+function Default(props: DefaultProps) {
   const { children } = props;
 
   const {
@@ -58,5 +51,5 @@ function Layout(props: LayoutProps) {
   );
 }
 
-export type { LayoutProps };
-export default Layout;
+export type { DefaultProps };
+export default Default;

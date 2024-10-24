@@ -1,5 +1,6 @@
 import React from 'react';
-import Category, { CategoryProps } from '../Category';
+import type { CategoryProps } from '../Category';
+import Category from '../Category';
 import Section from '../Section';
 
 interface CategoriesProps {
