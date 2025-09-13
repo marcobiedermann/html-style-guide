@@ -65,9 +65,9 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
-    "stylelint": "^16.14.1",
-    "stylelint-config-standard": "^36.0.1",
-    "stylelint-order": "^6.0.4",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-order": "^7.0.0",
     "stylelint-selector-bem-pattern": "^4.0.1",
     "typescript": "^5.9.2"
   },
