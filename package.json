@@ -40,7 +40,7 @@
   "homepage": "https://www.marcobiedermann",
   "license": "ISC",
   "dependencies": {
-    "gatsby": "^5.15.0",
+    "gatsby": "^5.16.1",
     "gatsby-plugin-manifest": "^5.15.0",
     "gatsby-remark-autolink-headers": "^6.15.0",
     "gatsby-remark-prismjs": "^7.15.0",
